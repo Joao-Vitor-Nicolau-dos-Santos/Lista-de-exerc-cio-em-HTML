@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Img/favicon.jpg" style="border-radius: 15px;">
 </head>
 <body>
     <input type="checkbox" id="check">
@@ -369,35 +370,130 @@
 
         <h1 id="favicon">HTML Favicon</h1>
         <div class="favicon">
-            
+            O Favicon é aquela imagem que fica no canto da guia: <br>
+            Veja o código a seguir: <br><br>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt; <br>
+                &lt;head&gt; <br>
+                &lt;titleMy Page Title/title&gt; <br>
+                <mark>&lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt; </mark><br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br><br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt; <br><br>
+                O código marcado serve para criar o favicon, olhe o nosso: <br><br>
+                <img src="Img/favicon.jpg" alt=".webp" height="200px">
         </div>
 
         <br><br><br>
 
         <h1 id="table">HTML Table</h1>
         <div class="table">
-
+            Bora falar de tabelas. Como é de se pensar, as tabelas são feitas para organizar dados em linhas e colunas.<br><br>
+            <table>
+                <tr>
+                    <th>Coluna 1</th>
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                </tr>
+                <tr>
+                    <td>Alguma coisa 1</td>
+                    <td>Alguma coisa 2</td>
+                    <td>Alguma coisa 3</td>
+                </tr>
+                <tr>
+                    <td>Melancia</td>
+                    <td>Melancia</td>
+                    <td>Melancia</td>
+                </tr>
+            </table> <br><br>
+            Veja o código: <br><br>
+            <code>
+                &lt;table&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt; Coluna 1 &lt;/td&gt;<br>
+                &lt;td&gt; Coluna 2 &lt;/td&gt;<br>
+                &lt;td&gt; Coluna 3 &lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt; Alguma coisa 1 &lt;/td&gt;<br>
+                &lt;td&gt; Alguma coisa 2 &lt;/td&gt;<br>
+                &lt;td&gt; Alguma coisa 3 &lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt; Melancia&lt;/td&gt;<br>
+                &lt;td&gt; Melancia&lt;/td&gt;<br>
+                &lt;td&gt; Melancia&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;/table&gt;<br>
+            </code><br><br><br>
+            Cada célula da tabela é definida pela tag <code>&lt;td&gt;</code> , ou seja, ela repesenta os dados da tabela. <br><br>
+            A tag <code>&lt;tr&gt;</code> se refere a linha da mesa. <br><br>
+            Já o cabeçalho é definido pela tag <code>&lt;th&gt;</code>
         </div>
 
         <br><br><br>
 
         <h1 id="list">HTML List</h1>
         <div class="list">
-
+            As listas servem para fazer listas :D <br><br>
+            Existem as listas não ordenadas:
+            <ul>
+                <li>Item um</li>
+                <li>Item dois</li>
+                <li>Item três</li>
+            </ul> <br><br>
+            Usamos a tag <code>&lt;ul&gt;</code> para abrir a lista e a tag <code>&lt;li&gt;</code> para colocar os itens. Veja: <br><br>
+            <code>&lt;ul&gt;</code><br>
+            <code>&lt;li&gt;Item Um&lt;/li&gt;</code> <br>
+            <code>&lt;li&gt;Item Dois&lt;/li&gt;</code> <br>
+            <code>&lt;li&gt;Item Três&lt;/li&gt;</code> <br>
+            <code>&lt;/ul&gt;</code> <br><br>
+            Criamos uma lista não ordenada. Bora para a ordenada. <br><br>
+            <code>&lt;dl&gt;</code> <br>
+            <code>&lt;dt&gt; Café &lt;/dt&gt;</code><br>
+            <code>&lt;dd&gt;- Expresso&lt;/dd&gt;</code> <br>
+            <code>&lt;dd&gt;- Expresso Duplo com leite&lt;/dd&gt;</code> <br>
+            <code>&lt;dt&gt;Capuccino&lt;/dt&gt;</code> <br>
+            <code>&lt;dd&gt;- Puro&lt;/dd&gt;</code> <br>
+            <code>&lt;dd&gt;- Com Chocolate&lt;/dd&gt;</code> <br>
+            <code>&lt;/dl&gt;</code> <br><br>
+            Já vimos o código, bora ver ele funcionando: <br>
+            <dl>
+                <dt>
+                    <dt>Café</dt>
+                    <dd>- Expresso</dd>
+                    <dd>- Expresso Duplo</dd>
+                    <dt>Capuccino</dt>
+                    <dd>- Puro</dd>
+                    <dd>- Com chocolate</dd>
+                </dt>
+            </dl> <br><br>
+            Nesse caso temos uma lista com descrição, O <code>&lt;dl&gt;</code> tag define a lista de descrição, o <code>&lt;dt&gt;</code> tag define o termo (nome), e o <code>&lt;dd&gt;</code> tag descreve cada termo.
         </div>
 
         <br><br><br>
 
-        <h1 id="block">HTML Block</h1>
+        <h1 id="block">HTML Block & Inline</h1>
         <div class="block">
-
+            Cada elemento HTML tem um valor de exibição padrão, dependendo do tipo do elemento é. Os dois valores de exibição mais comuns são block e inline. <br><br>
+            Eis alguns elementos de bloco: <br><br>
+            <code>&lt;address&gt; &lt;article&gt; &lt;aside&gt; &lt;blockquote&gt; &lt;canvas&gt; &lt;dd&gt; &lt;dl&gt; &lt;div&gt; &lt;dt&gt; &lt;fieldset&gt; &lt;figcaption&gt; &lt;figute&gt; &lt;footer&gt; &lt;form&gt; &lt;h1&gt; até &lt;h6&gt; &lt;header&gt; &lt;hr&gt; &lt;li&gt; &lt;main&gt; &lt;nav&gt; &lt;noscript&gt; &lt;ol&gt; &lt;p&gt; &lt;pre&gt; &lt;section&gt; &lt;table&gt; &lt;foot&gt; &lt;ul&gt; &lt;video&gt;</code><br><br><br>
+            Bora para os elementos Inline: <br><br>
+            <code>&lt;a&gt; &lt;abbr&gt; &lt;acronym&gt; &lt;b&gt; &lt;bdo&gt; &lt;big&gt; &lt;br&gt; &lt;button&gt; &lt;cite&gt; &lt;code&gt; &lt;dfn&gt; &lt;em&gt; &lt;i&gt; &lt;img&gt; &lt;input&gt; &lt;kbd&gt; &lt;label&gt; &lt;map&gt; &lt;object&gt; &lt;output&gt; &lt;q&gt; &lt;samp&gt; &lt;script&gt; &lt;select&gt; &lt;small&gt; &lt;span&gt; &lt;strong&gt; &lt;sub&gt; &lt;sup&gt; &lt;textarea&gt; &lt;time&gt; &lt;tt&gt; &lt;vv&gt;</code><br><br>
+            Um detalhe importante é que os elemento inline não pode ter um elemento block dentro dele.
         </div>
 
         <br><br><br>
 
         <h1 id="div">HTML Div</h1>
         <div class="div">
-
+            Um dos elementos citados acima é o <code>&lt;div&gt;</code>. Vale ressaltar que ela sempre irá ocupar toda a largura disponivel: <br>
+            Não sou uma div<div class="dv">Sou uma div</div>Não sou uma div <br><br>
+            É comum usar os elementos &lt;class&gt; e &lt;id&gt; as DIVs. <br><br>
+            As DIVs geralmente são usadas para criar "blocos" no site.
         </div>
 
         <br><br><br>

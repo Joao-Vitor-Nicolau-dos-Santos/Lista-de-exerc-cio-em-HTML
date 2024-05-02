@@ -18,6 +18,25 @@ code {
     padding: 0 2px;
 }
 
+mark{
+    background-color: #58ff6e;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #085312;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #58ff6e;
+}
 .html{
     padding-top: 60px;
     padding-left: 30px;
@@ -138,4 +157,8 @@ body::-webkit-scrollbar-thumb {
 .quadrado{
     width: 100px;
     height: 100px;
+}
+
+.dv{
+    background-color: rgb(149, 255, 149);
 }
