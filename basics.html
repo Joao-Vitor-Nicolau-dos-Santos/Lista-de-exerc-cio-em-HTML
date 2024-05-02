@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <img id="btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAASlJREFUOE/t0j8oRlEYx/GP/0ViUcrAQNlYDf4ki8kmJSVZlIFJlKIMNkoZFaUUi2JQNsUkpSiLFIPRYndPHSXd+16vegflrE/P9zy/P2VK8MpKwPQPTXW1CtV4/zJtxNtPMkjzNABPUY+hCB7ACcZxnAfOgobFYVxjEF04Qw3GcFgInJV+JY4wglv0oxPnqMUE9rPAhSpVjr0o+R59aIvgBkxjJw2c19MwP8AoHtCdXNiRKLhBBSax+x2cB23HJZowj01sYyYBPiU+9+C1GGgAXqAZi1jHRlKruQjsTSx4KUZ+8O4qAlew+gUYQOHCVGD4JE1+He7QijUsYxZbeI6BBemZL8vTheSykPBS3GyJFZrC42/Kn7eTO89LPxdQTFC/gn0u/Z1LPwDegS0W8npC1AAAAABJRU5ErkJggg=="/>
+        <img id="cancel" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAR1JREFUOE/t1E0rRVEUxvHfJQbeUqa+hKRESVIGJuRlpGRi7hP4HoxJKFJEXgYSA5/CiIwMlAEDZ9Ue3HSOc8+tO+LU6QzOWv/97PU8e9e04Km1gOkfWjjVXnzgq6CiH295/4pm2ocrvGIuBzyGM6zh6Ce4CNqDG4xk7ynm8ZmaJxOwEyvYaxQadQG+QKi6xGz2Hcc52rGcpzIayyLVnVRN4AHDaMMCTorcKINGXxfuMJQgSzj87dA0Ao1thxkdCXSfLTKdkpHLLoOGQft1CjcyA2MUAZ7Be5VIRW0AD1LTIo7TKK4zs0Yz4x4xlQcuUjqYZfApmRKx2alTFKm4TTPexnqVSG3iGVs5WxzALlbxUgXa9K1YZlRT4D8O/QaXFyoWJAoz0AAAAABJRU5ErkJggg=="/>
+    </label>
+
+    <div class="sidebar">
+        <header>Menu</header>
+        <ul>
+            <li><a href="#basics">Basics</a></li>
+            <li><a href="#elements">Elements</a></li>
+            <li><a href="#attributes">Attributes</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#paragraphs">Paragraphs</a></li>
+            <li><a href="#styles">Styles</a></li>
+            <li><a href="#formatting">Formatting</a></li>
+            <li><a href="#quotations">Quotations</a></li>
+            <li><a href="#comments">Comments</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#links">Link</a></li>
+            <li><a href="#favicon">Favicon</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#list">List</a></li>
+            <li><a href="#block">Block & Inline</a></li>
+            <li><a href="#div">Div</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#id">ID</a></li>
+            <li><a href="#iframes">Iframes</a></li>
+            <li><a href="#javascript">Java Script</Script></a></li>
+            <li><a href="#semantics">Semantics</a></li>
+            <li><a href="#stylesguide"> Style Guide</a></li>
+            <li><a href="#entities">Entities</a></li>
+            <li><a href="#symbols">Symbols</a></li>
+            <li><a href="#emojis">Emojis</a></li>
+            <li><a href="#charsets">Charsets</a></li>
+            <li><a href="#url">URL Encode</a></li>
+            <li><a href="#xhtml">HTML vs XHTML</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#formsattributes">Forms Attributes</a></li>
+            <li><a href="#formselements">Forms Elements</a></li>
+            <li><a href="#inputtypes">Input Types</a></li>
+            <li><a href="#inputattributes"> Input Attributes</a></li>
+            <li><a href="#inputformattributes">Input Form Attributes</a></li>
+            <li><a href="#canvas">Canvas</a></li>
+            <li><a href="#svg">SVG</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#drag">Drag/Drop</a></li>
+        </ul>
+    </div>
+
+    <div class="html">
+        <h1 id="basics">HTML Basics:</h1>
+        <div class="basics">
+            O seu código HTML deve começar declarando o tipo de documento, usando <code>&lt;!DOCTYPE html&gt;</code>
+            <br>
+            Todo o documento deve começar com <code>&lt;html&gt;</code> e terminar com <code>&lt;/html&gt;</code>
+            <br>
+            Temos então a parte que será vísivel a pessoa que acessar seu site, ela estara dentro da TAG <code>&lt;body&gt;</code>    <code>&lt;/body&gt;</code>
+            <br>
+            <br>
+            <br>
+            Temos em seguida os HTML Headings, que vai de <code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code>. Veja exemplos:
+            <h1>Este texto usa a TAG <code>&lt;h1&gt;</code></h1>
+            <h3>Este texto usa a TAG <code>&lt;h3&gt;</code></h3>
+            <h6>Este texto usa a TAG <code>&lt;h6&gt;</code></h6>
+            Como dá para ver, conforme maior o número menor o tamanho do texto.
+            <br>
+            <br>
+            Em seguida vamos aos paragrafos, que usam a TAG <code>&lt;p&gt;</code>:
+            <p><code>&lt;p&gt;</code>Esse é um paragrafo<code>&lt;/p&gt;</code></p>
+            <p><code>&lt;p&gt;</code>Esse é um outro paragrafo<code>&lt;/p&gt;</code></p>
+            <br>
+            Temos o link(pode ser para algum link WEB ou criar um link para algum arquivo .html):
+            <br>
+            Esse é um link para o YouTube: <code>&lt;a href="https://www.youtube.com"&gt;</code><a href="https://www.youtube.com">YouTube</a><code>&lt;/a&gt;</code>
+            <br>
+            <br>
+            Por fim, temos as imagens:
+            <br>
+            <code>&lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYm3bJ0HoHEwKY_L5efPezjCjJOzxmYfZWZqH0jUlhQ&s" width="142" height="142"&gt;</code>
+            <br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYm3bJ0HoHEwKY_L5efPezjCjJOzxmYfZWZqH0jUlhQ&s" width="142" height="142">
+            <br>
+            As tags <code>&lt;width&gt;</code> e <code>&lt;height&gt;</code> se referem a largura e altura da imagem.
+        </div>
+        
+        <br><br><br>
+    
+        <h1 id="elements">HTML Elements:</h1>
+        <div class="elements">
+            Veja o código a seguir:
+            <br>
+            <code>&lt;!DOCTYPE html&gt;</code><br>
+            <code>&lt;html&gt;</code><br>
+            <code>&lt;body&gt;</code><br>
+            <code>&lt;H4&gt;</code>Esse texto está usando h4 em maisculo.<code>&lt;/H4&gt;</code><br>
+            <p><code>&lt;p&gt;Esse paragrafo tem um p apenas no começo.</code><br>
+            <code>&lt;/body&gt;</code><br>
+            <code>&lt;/html&gt;</code>
+            <br><br>
+            Esses itens são todos elementos HTML; &lt;tag&gt;O que estiver aqui...&lt;/tag&gt; é considerado um elemento. É importante falarmos que é possível colocar um elemento dentro de outro elemento. <br><br>
+            Vamos falar dos usados no exemplo acima: <br>
+            O <code>&lt;html&gt;</code> é o elemento raiz e é ele quem define o documento HTML. <br><br>
+            Dentro do <code>&lt;html&gt;</code> temos um outro elemento, o <code>&lt;body&gt;</code>. Esse elemento define o corpo( o que seja visivel ao usuario). <br><br>
+            Dentro do corpo vamos ter outro dois elemento: <br>
+            <code>&lt;H4&gt;</code> : acima foi mencionado que eles vão do <code>&lt;h1&gt;</code> até o <code>&lt;h6&gt;</code> e tem como função definir um cabeçalho. Nesse exemplo ele foi feito com as letras em maiusculo, mas o recomendado é sempre fazer em minusculo.<br>
+            <code>&lt;p&gt;</code> : a tag <code>&lt;p&gt;</code> é o paragrafo. No exemplo acima ela foi utilizada para demontrar que tem alguas tags que funcionam sem a tag final, mas devo ressaltar NÃO ESQUEÇA A TAG FINAL. <br><br>
+            Um outro tipo de elemento é o elemento vazio, ou seja, não tem conteudo algum dentro dele. Nesse texto foi usado muito um desses elementos, o <code>&lt;br&gt;</code> que "quebra" a linha: <br>
+            <br>Esse<code>&lt;br&gt;</code> <br>texto<code>&lt;br&gt;</code> <br> está<code>&lt;br&gt;</code> <br> quebrado.
+        </div>
+    
+        <br><br><br>
+    
+        <h1>HTML  Attributes:</h1>
+        <div class="attributes" id="attributes">
+            A função dos atributos é fornecer informações adicionais aos elementos. <br>
+            Veja um exemplo: <br>
+            <code>&lt;a href="https://www.youtube.com"&gt;</code><a href="https://www.youtube.com">YouTube</a><code>&lt;/a&gt;</code> <br>
+            Nesse exemplo o a tag <code>&lt;a&gt;</code> define um link a outra página HTML. Já o <code>&lt;href&gt;</code> especifica o URL da página que será direcionada. <br><br><br>
+           Temos também o atributo <code>&lt;src&gt;</code>, que fica dentro do elemento <code>&lt;img&gt;</code>: <br>
+           <code>&lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYm3bJ0HoHEwKY_L5efPezjCjJOzxmYfZWZqH0jUlhQ&s" width="142" height="142"&gt;</code>
+            <br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYm3bJ0HoHEwKY_L5efPezjCjJOzxmYfZWZqH0jUlhQ&s" width="142" height="142"> <br>
+            No exemplo acima foi usado uma URL para compor a imagem, mas também tem como usar o SRC com uma imagem hospedada dentro do proprio site. <br><br>
+            Um fato importante se tratando de item gráficos é a largura e a altura dos atributos, no caso pelas tags <code>&lt;widht&gt;</code> e <code>&lt;height&gt;</code>, podendo especificar quantos pixels tera a imagem.  <br><br>Ainda há muitos atributos existentes, recomendos fazer uma pesquisa mais aprofundada sobre o assunto.
+        </div>
+    
+        <br><br><br>
+    
+        <h1  id="headings">HTML Headings</h1>
+        <div class="headings">
+            Os Headings são títulos ou legendas:
+            Exemplo:
+            <h1><code>&lt;h1&gt;</code>Heading 1<code>&lt;/h1&gt;</code></h1> <br>
+            <h2><code>&lt;h2&gt;</code>Heading 2<code>&lt;/h2&gt;</code></h2> <br>
+            <h3><code>&lt;h3&gt;</code>Heading 3<code>&lt;/h3&gt;</code></h3> <br>
+            <h4><code>&lt;h4&gt;</code>Heading 4<code>&lt;/h4&gt;</code></h4> <br>
+            <h5><code>&lt;h5&gt;</code>Heading 5<code>&lt;/h5&gt;</code></h5> <br>
+            <h6><code>&lt;h6&gt;</code>Heading 6<code>&lt;/h6&gt;</code></h6> <br> <br> <br>
+            Sendo assim <code>&lt;h1&gt;</code> define a tag mais importante, já a <code>&lt;h6&gt;</code> define um heading com menos importancia.
+            
+        </div>
+
+        <br><br><br>
+
+        <h1 id="paragraphs">HTML Paragraphs</h1>
+        <div class="paragraphs">
+            A tag <code>&lt;p&gt;</code> que define o elemento como um parágrafo. <br><br>
+            Exemplo:
+            <p><code>&lt;p&gt;</code>Parágrafo 1<code>&lt;/p&gt;</code></p>
+            <p><code>&lt;p&gt;</code>Parágrafo 2<code>&lt;/p&gt;</code></p> <br><br>
+            Quando se digita o texto pulando as linhas sem colocar nada o texto une tudo: <br>
+            Código: <br><br>
+            <code>&lt;p&gt;</code>Criminosos colecionando demônios
+            (Akatsuki! Akatsuki!)
+            E o mundo inteiro tem medo de quem nós somos
+            (Akatsuki! Akatsuki!)
+            Procurados, nukenins
+            Vamos caçá-los, jinchuurikis
+            Criminosos colecionando demônios
+            (Akatsuki! Akatsuki!)<code>&lt;/p&gt;</code> <br><br>
+            Veja como mostraria para quem está visitando o seu site:
+            <p>Criminosos colecionando demônios
+                (Akatsuki! Akatsuki!)
+                E o mundo inteiro tem medo de quem nós somos
+                (Akatsuki! Akatsuki!)
+                Procurados, nukenins
+                Vamos caçá-los, jinchuurikis
+                Criminosos colecionando demônios
+                (Akatsuki! Akatsuki!)
+            </p><br><br>
+            Para evitar erros assim usamos a tag <code>&lt;pre&gt;</code>: <br>
+            Código: <br>
+            <code>&lt;pre&gt;</code><br>
+            Criminosos colecionando demônios <br>
+            (Akatsuki! Akatsuki!) <br>
+            E o mundo inteiro tem medo de quem nós somos <br>
+            (Akatsuki! Akatsuki!) <br>
+            Procurados, nukenins <br>
+            Vamos caçá-los, jinchuurikis <br>
+            Criminosos colecionando demônios <br>
+            (Akatsuki! Akatsuki!) <br><code>&lt;/pre&gt;</code><br><br>
+            Veja o código funcionando: <br><br>
+            <pre>
+                Criminosos colecionando demônios
+                (Akatsuki! Akatsuki!)
+                E o mundo inteiro tem medo de quem nós somos
+                (Akatsuki! Akatsuki!)
+                Procurados, nukenins
+                Vamos caçá-los, jinchuurikis
+                Criminosos colecionando demônios
+                (Akatsuki! Akatsuki!)
+            </pre>
+        </div>
+
+        <br><br><br>
+
+        <h1 id="styles">HTML Styles</h1>
+        <div class="styles">
+            O atributo <code>&lt;style&gt;</code> é usado para adicionar um estilo(cor, tamanho, fonte, etc.) <br><br>
+            Veja como funciona a sintaxe do style: <br>
+            <code>&lt;tagname style='propriedade:valor'&gt;</code><br><br>
+            Tanto a propriedade quanto o valor devem ser CSS(Cascading Style Sheets - é responsael por estilizar uma página em especifico). <br><br><br>
+            Algumas propriedades do <code>&lt;style&gt;</code>: <br><br>
+            <h3>Cor do fundo:</h3><br>
+            <code>&lt;background-color&gt;</code> é a propriedade que define a cor do fundo de algum elemento. Veja: <br><br><br>
+            <div class="quadrado"></div>
+            <style>
+                .quadrado {
+                  background-color: green;
+                  width: 400px;
+                  height: 250px;
+                }
+              </style><br><br>
+
+              Veja o código desse quadrado: <br>
+              <code>&lt;style&gt; <br>
+                .quadrado { <br>
+                background-color: green; <br>
+                width: 200px; <br>
+                height: 200px; <br>
+                <br>
+                &lt;/style&gt;</code><br><br><br>
+                Vejamos agora como alterar a cor de um paragrafo especifico: <br>
+                <h4 style="color:blue;">Esse h4 é azul</h4> <br>
+                Veja o código: <br>
+                <code>&lt;h4 style='color:blue'&gt;Esse h4 é azul&lt;/h4&gt;</code><br><br><br>
+                Temos também como alterar as fontes de um paragrafo: <br><br>
+                <h4 style="font-family:verdana;">Esse cabeçalho usa a fonte verdana.</h4> <br><br><br>
+                A propriedade <code>&lt;font-size&gt;</code> altera o tamanho do texto:
+                <h1 style="font-size:78px;">Esse texto tem 78 pixels</h1><br><br>
+                Veja o código: <br>
+                <code>&lt;h1 style="font-size:78px"&gt; Esse texto tem 78 pixels &lt;h1&gt;</code> 
+        </div>
+
+        <br><br><br>
+
+        <h1 id="formatting">HTML Formatting</h1>
+        <div class="formatting">
+            Os elementos de formatação exibem alguns tipos especiais de texto: <br>
+            <code>&lt;b&gt;</code>- Texto em negrito: <br>
+            <b>Negrito.</b><br>
+            <code>&lt;strong&gt;</code>- Texto importante:<br>
+            <strong>Texto muito importante</strong><br>
+            <code>&lt;i&gt;</code>- Texto em itálico:<br>
+            <i>Texto em italico</i><br>
+            <code>&lt;em&gt;</code>- Texto enfatizado: <br>
+            <em>Texto com enfâse</em><br>
+            <code>&lt;mark&gt;</code>- Texto marcado: <br>
+            <mark>Texto marcado</mark><br>
+            <code>&lt;small&gt;</code>- Texto menor: <br>
+            <small>Texto pequeno</small><br>
+            <code>&lt;del&gt;</code>- Texto excluído: <br>
+            <del>Esse texto foi excluído</del><br>
+            <code>&lt;ins&gt;</code>- Texto inserido:<br>
+            <ins>Esse texto foi inserido</ins><br>
+            <code>&lt;sub&gt;</code>- Texto subscrito: <br>
+            <sub>Esse texto foi subscrito</sub><br>
+            <code>&lt;sup&gt;</code>- Texto sobrescrito: <br>
+            <sup>Esse texto foi sobrescrito</sup>
+        </div>
+
+        <br><br><br>
+
+        <h1 id="quotations">HTML Quotations</h1>
+        <div class="quotations">
+            Vamos falar agora dos elementos <code>&lt;blockquote&gt;</code>, <code>&lt;q&gt;</code>. <br><br>
+            Vamos começar com o <code>&lt;blockquote&gt;</code>, veja o texto abaixo: <br><br>
+            <p>Esse trecho foi dito pelo Groot:</p>
+            <blockquote cite="https://www.youtube.com/watch?v=D7eFpRf4tac">I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+                I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+                I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+                I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+                I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+                I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+                I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+                I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot.
+            </blockquote><br>
+            O elemento <code>&lt;blockquote&gt;</code> tem como função definir uma seção que cita outra fonte. Geralmente essa seção é recuada pelo próprio navegador. <br><br>
+            Veja o código: <br>
+            <code>&lt;p&gt;</code>Esse trecho foi dito pelo Groot:<code>&lt;/p&gt;</code><br>
+            <code>&lt;blockquote cite="https://www.youtube.com/watch?v=D7eFpRf4tac&gt;</code><br>
+            I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+            I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+            I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+            I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+            I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+            I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+            I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,
+            I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot,I'm Groot. <br>
+            <code>&lt;/blockquote&gt;</code><br><br><br>
+            A tag <code>&lt;q&gt;</code> é usada ára fazer uma citação curta: <br>
+            <q>Pequena citação</q><br><br>
+            Veja o código: <br>
+            <code>&lt;q&gt;</code>Pequena citação<code>&lt;/q&gt;</code> <br><br>
+            Essas são apenas duas tags, pesquise para descobrir qual mais tem.
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="comments">HTML Comments</h1>
+        <div class="comments"><br>
+            Vamos adicionar um comentario a um texto? <br>
+            Esse eu não vou conseguir demonstrar, mas esse comentario existe no código. <br>
+            <!-- Comentario brabu -->
+            <code>&lt;!-- Comentario brabu --!&gt;</code><br>
+            É assim que se comenta :D
+        </div>
+
+        <br><br><br>
+
+        <h1 id="colors">HTML Colors</h1>
+        <div class="colors">
+            No HTML as cores podem ser especificadas pelo nome da cor e também para colocar uma cor como plano de fundo: <br><br>
+            <div class="quadrado1">slateblue</div>
+            <style>
+                .quadrado1 {
+                  background-color: slateblue;
+                  width: 400px;
+                  height: 250px;
+                  color: antiquewhite;
+            }
+            </style><br><br>
+            Além disso também tem como alterar a cor do texto:
+            <h3 style="color: darkmagenta;">Esse texto tem cor darkmagenta.</h3><br><br>
+            Veja o código: <br><br>
+            <code>&lt;h3 style="color: darkmagenta;"&gt;</code>Esse texto tem cor darkmagenta.<code>&lt;h3&gt;</code><br><br><br>
+            Temos também cores RGB, hexadecimal e hsl: <br>
+            <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1><br>
+            <h1 style="background-color:#ff6347;">#ff6347</h1><br>
+            <h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1><br>
+            
+            Você já entende um pouco sobre cores no HTML.
+        </div>
+
+        <br><br>
+
+        <h1 id="links">HTML Links</h1>
+        <div class="links">
+            Bora falar sobre Hyperlinks: <br>
+            Você pode clicar em um link e ir para outro documento. Quando você move o mouse sobre um link, a seta do mouse se transforma em uma mãozinha. Um link não precisa ser texto. Um link pode ser uma imagem ou qualquer outro elemento HTML! <br><br>
+            Os links tem a seguinte sintax: <br><br>
+            <code>&lt;a href="url aqui"&gt;</code>Titulo <code>&lt;/a&gt;</code><br><br>
+            Por padrão, os links aparecerão da seguinte forma em todos os navegadores:
+
+            Um link não visitado é sublinhado e azul <br><br>
+            Um link visitado é sublinhado e roxo <br><br>
+            Um link ativo é sublinhado e vermelho <br><br>
+            Veja um exemplo: <br>
+            <a href="https://www.youtube.com/">YouTube</a><br><br>
+            Veja o código: <br>
+            <code>&lt;a href="https://www.youtube.com/"&gt;</code>YouTube<code>&lt;/a&gt;</code><br><br><br>
+            Bora para o Favicon
+        </div>
+
+        <br>
+
+        <h1 id="favicon">HTML Favicon</h1>
+        <div class="favicon">
+            
+        </div>
+
+        <br><br><br>
+
+        <h1 id="table">HTML Table</h1>
+        <div class="table">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="list">HTML List</h1>
+        <div class="list">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="block">HTML Block</h1>
+        <div class="block">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="div">HTML Div</h1>
+        <div class="div">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="classes">HTML Classes</h1>
+        <div class="classes">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="id">HTML Id</h1>
+        <div class="id">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="iframes">HTML Iframes</h1>
+        <div class="iframes">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="javascript">HTML Java Script</h1>
+        <div class="javascript">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="semantics">HTML Semantics</h1>
+        <div class="semantics">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="stylesguide">HTML Styles Guide</h1>
+        <div class="stylesguide">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="entities">HTML Entities</h1>
+        <div class="entities">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="symbols">HTML Symbols</h1>
+        <div class="symbols">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="emojis">HTML Emojis</h1>
+        <div class="emojis">
+
+        </div>
+        <br><br><br>
+
+        <h1 id="charsets">HTML Charsets</h1>
+        <div class="charsets">
+
+        </div>
+        <br><br><br>
+
+        <h1 id="url">HTML Url Encode</h1>
+        <div class="url">
+
+        </div>
+        <br><br><br>
+
+        <h1 id="xhtml">HTML vs XHTML</h1>
+        <div class="xhtml">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="forms">HTML Forms</h1>
+        <div class="forms">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="formsattributes">HTML Forms Attributes</h1>
+        <div class="formsattributes">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="formselements">HTML Forms Elements</h1>
+        <div class="formselements">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="inputtypes">HTML Input Types</h1>
+        <div class="inputtypes">
+
+        </div>
+        
+        <br><br><br>
+        
+        <h1 id="inputattributes">HTML Input Attributes</h1>
+        <div class="inputattributes">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="inputformattributes">Input Form Attributes</h1>
+        <div class="inputformattributes">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="canvas">HTML Canvas</h1>
+        <div class="canvas">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="svg">HTML SVG</h1>
+        <div class="svg">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="media">HTML Media</h1>
+        <div class="media">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="video">HTML Video</h1>
+        <div class="video">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="audio">HTML Audio</h1>
+        <div class="audio">
+
+        </div>
+
+        <br><br><br>
+
+        <h1 id="drag">HTML Drag/Drop</h1>
+        <div class="drag">
+
+        </div>
+</body>
+</html>
