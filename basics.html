@@ -500,87 +500,465 @@
 
         <h1 id="classes">HTML Classes</h1>
         <div class="classes">
-
+            O atributo &lt;class&gt; serve para especificar uma classe a um elemento HTML. Varios elementos pode compartilhar uma mesma classe. <br><br>
+            O &lt;clas&gt; é frequentemente usado para apontar para um nome de classe em um CSS. Ele também pode ser usado por um JavaScript para acessar e manipular elementos com o nome específico da classe. Ao analisar o código desse site você irá perceber quem temos muitas &lt;class&gt;. <br><br>
+            Veja a sintaxe da class em uma div: <br>
+            <code>div class="nome da div"&gt;&lt;/div&gt;</code>
         </div>
 
         <br><br><br>
 
         <h1 id="id">HTML Id</h1>
         <div class="id">
-
+            O atributo &lt;id&gt; é usado para colocar uma identificação exclusiva a um elemento, sendo assim é impossivel ter dois IDs iguais. <br><br>
+            O ID é usado pelo CSS e pelo JavaScript para selecionar ou estilizar um elemento em especifico, além disso também é usado para criar marcadores. Usamos muitos nesse site também.
+            Veja a sintaxe aplicada a uma div: <br><br>
+            <code>&lt;div class="nome da div" id="ID unico"&gt;&lt;/div&gt;</code>
         </div>
 
         <br><br><br>
 
         <h1 id="iframes">HTML Iframes</h1>
         <div class="iframes">
-
-        </div>
+            O &lt;iframe&gt; é usado para criar um quadro em linha; ou seja, para incorporar outro documento dentro do HTML atual. Veja o exemplo: <br><br>
+            <iframe src="index.html" title="iframe" width="700px" height="400px"></iframe><br><br>
+            É de boa prática colocar sempre um titulo ao &lt;iframe&gt;. Veja o código: <br><br>
+            &lt;iframe src="index.html" tittle="iframe" widht="700px" height="400px"&gt;&lt;iframe&gt; <br><br>
+            Tem como remover a borda também usando o <code>border:none</code>.
+        </div>tit
 
         <br><br><br>
 
         <h1 id="javascript">HTML Java Script</h1>
         <div class="javascript">
+            O objetivo do JavaScript é tornar as páginas HTML mais dinâmicas e interativas. Para isso usamos a tag <code>&lt;script&gt;</code>, que contém intruções script ou puxa informações de um arquivo script externo através do atributo <code>src</code>. <br><br>
+            Veja um exemplo: <br><br>
 
+            <button type="button" onclick="myFunction()">Clica aqui, curioso.</button>
+
+            <p id="demo1">Agora estou aqui</p>
+
+            <script>
+            function myFunction() { 
+            document.getElementById("demo1").innerHTML = "Agora não estou mais aqui";
+            }
+            </script><br>
+            Veja o código usado: <br><br>
+            <code>&lt;p id="demo1"&gt;Agora estou aqui&lt;/p&gt;<br>
+            &lt;script&gt; <br>
+            function myFunction(){ <br>
+                document.getElementById("demor1"),innetHTML = "Agora não estou mais aqui"; <br>
+            } <br>
+            &lt;/script&gt; </code>
+            <br><br><br>
+            <p id="demo2">Esse texto vai mudar.</p>
+            <script>
+                function myFunction() {
+                  document.getElementById("demo2").style.fontSize = "25px"; 
+                  document.getElementById("demo2").style.color = "red";
+                  document.getElementById("demo2").style.backgroundColor = "yellow";        
+                }
+                </script><br>
+                <button type="button" onclick="myFunction()">Clicaaaaaaaaa</button> <br><br>
+                Veja o código usado: <br><br>
+                &lt;script&gt; <br>
+                    function myFunction(){ <br>
+                    document.getElementById("demor2").style.fontSize = "25px";<br>
+                    document.getElementById("demor2").style.color = "red";<br>
+                    document.getElementById("demor2").style.backgroundColor = "yellow";<br>
+                    } <br>
+                &lt;/script&gt; </code>
         </div>
 
         <br><br><br>
 
         <h1 id="semantics">HTML Semantics</h1>
         <div class="semantics">
-
-        </div>
+            Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor. <br>
+            Exemplos de elementos não semânticos: <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> Não diz nada sobre o seu conteúdo. <br>
+            Exemplos de elementos semânticos: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code>, e <code>&lt;article&gt;</code> define claramente o seu conteúdo. <br><br>
+            Muitos sites contêm código HTML como: <code>&lt;div id="nav"&gt;</code>, <code>&lt;div class="header"&gt;</code> e <code>&lt;div id="footer"&gt;</code> para indicar navegação, cabeçalho e rodapé.
+            <br>
+            Em HTML existem alguns elementos semânticos que podem ser usados para definir diferentes partes de uma página da web:  
+            <br><br>    
+                <code>
+                &lt;article&gt;: Define conteúdo independente e independente<br>
+                &lt;aside&gt;: Define conteúdo além do conteúdo da página<br>
+                &lt;details&gt;: Define detalhes adicionais que o usuário pode visualizar ou ocultar<br>
+                &lt;figcaption&gt;: Define uma legenda para um elemento<br>
+                &lt;figure&gt;: Especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de códigos, etc.<br>
+                &lt;footer&gt;: Define um rodapé para um documento ou seção<br>
+                &lt;header&gt;: Especifica um cabeçalho para um documento ou seção<br>
+                &lt;main&gt;: Especifica o conteúdo principal de um documento<br>
+                &lt;mark&gt;: Define texto marcado/destacado<br>
+                &lt;nav&gt;: Define links de navegação<br>
+                &lt;section&gt;: Define uma seção em um documento<br>
+                &lt;summarty&gt;: Define um cabeçalho visível para um elemento<br>
+                &lt;time&gt;: Define uma data/hora<br></code><br><br>
+                Veja como eles funcionam: <br>
+                <img src="Img/semantics.gif" alt="">
+            </div>
 
         <br><br><br>
 
         <h1 id="stylesguide">HTML Styles Guide</h1>
         <div class="stylesguide">
-
+            Um código HTML consistente, limpo e arrumado torna mais fácil para os outros lerem e entenderem seu código, para isso usamos as Style Guides ou guias de estilo. <br><br>
+            Vamos declarar o tipo de documento primeiro: <br><br>
+            &lt;!DOCTYPE html&gt; Usamos esse para declarar o documento HTML <br><br>
+            Veja também sobre o bom uso de elementos em minusculo: <br><br>
+            &lt;body&gt; <br>
+            &lt;p&gt; Parapa pa pa &lt;/p&gt; <br>
+            &lt;/body&gt;<br><br>
+            Acima foi um bom código, veja um código feio: <br><br>
+            &lt;BODY&gt; <br>
+            &lt;p&gt; Parapa pa pa &lt;/p&gt; <br>
+            &lt;/BODY&gt;<br><br>
+            O HTML permite misturar letras maiúsculas e minúsculas em nomes de elementos. No entanto, recomendamos o uso de nomes de elementos minúsculos, porque misturar nomes maiúsculos e minúsculos parece ruim, os desenvolvedores normalmente usam nomes minúsculos, a minúscula parece mais limpa e minúsculas é mais fácil de escrever. <br><br><br>
+            Sempre feche também <code>TODOS</code> os elementos HTML: <br><br>
+            Veja um bom código: <br><br>
+            &lt;section&gt; <br>
+            &lt;p&gt; Parapa pa pa &lt;/p&gt; <br>
+            &lt;p&gt; Tutata tu tata tutu tata tu tata &lt;/p&gt; <br>
+            &lt;/section&gt;<br><br>
+            Veja um código não tão bom: <br><br>
+            &lt;section&gt; <br>
+            &lt;p&gt; Parapa pa pa  <br>
+            &lt;p&gt; Tutata tu tata tutu tata tu tata  <br>
+            &lt;/section&gt;<br><br>
         </div>
 
         <br><br><br>
 
         <h1 id="entities">HTML Entities</h1>
         <div class="entities">
-
+            Os caracteres reservados em HTML devem ser substituídos por entidades: <br><br>
+            Veja:  <br>
+            & lt; (Menor que) ou < <br>
+            & gt; (Maior que) ou > <br><br><br>
+            Se você usar os sinais de menos de (<) ou maior que (>) em seu texto HTML, o navegador poderá misturá-los com tags. <br><br>
+            Uma outra entidade comumente usada é a:  <code>& nbsp;</code>, que é um espaço não quebravel. É usado para evitar que certos navegadores tirem um espaço. <br><br>
+            Veja alguns caracteres uteis: <br><br>
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Utilidade</th>
+                    <th>Nome</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Espaço não quebravel</td>
+                    <td>& nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>Menor que</td>
+                    <td>& lt;</td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>Maior que</td>
+                    <td>& gt;</td>
+                </tr>
+                <tr>
+                    <td>&amp;</td>
+                    <td>'E' comercial</td>
+                    <td>& amp;</td>
+                </tr>
+                <tr>
+                    <td>&quot;</td>
+                    <td>Aspas Duplas</td>
+                    <td>& quot;</td>
+                </tr>
+                <tr>
+                    <td>&apos;</td>
+                    <td>Aspas Simples</td>
+                    <td>& apos;</td>
+                </tr>
+                <tr>
+                    <td>&cent;</td>
+                    <td>Centavos</td>
+                    <td>& cent;</td>
+                </tr>
+                <tr>
+                    <td>&pound;</td>
+                    <td>Libra</td>
+                    <td>& pound;</td>
+                </tr>
+                <tr>
+                    <td>&yen;</td>
+                    <td>Yen</td>
+                    <td>& yen;</td>
+                </tr>
+                <tr>
+                    <td>&euro;	</td>
+                    <td>Euro</td>
+                    <td>& euro;	</td>
+                </tr>
+                <tr>
+                    <td>&copy;	</td>
+                    <td>Copyright</td>
+                    <td>& copy;	</td>
+                </tr>
+                <tr>
+                    <td>&reg;	</td>
+                    <td>Trademark</td>
+                    <td>& reg;	</td>
+                </tr>
+            </table> <br><br>
+            Vale ressaltar que nos nomes eu tiver que separar o & do resto usando um espaço para não invocar o caractere.
         </div>
 
         <br><br><br>
 
         <h1 id="symbols">HTML Symbols</h1>
         <div class="symbols">
-
+            Muitos símbolos matemáticos, técnicos e monetários não estão presentes em um teclado normal. Para adicionar esses símbolos a uma página HTML, você pode usar o nome da entidade ou o número da entidade (uma referência decimal ou hexadecimal) para o símbolo: <br><br>
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Número</th>
+                    <th>Entidade</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td>&forall;</td>
+                    <td>& #8704;</td>
+                    <td>& forall;</td>
+                    <td>Para todos</td>
+                </tr>
+                <tr>
+                    <td>&part;</td>
+                    <td>& #8706;</td>
+                    <td>& part;</td>
+                    <td>Diferencial parcial</td>
+                </tr>
+                <tr>
+                    <td>&exist;</td>
+                    <td>& #8707</td>
+                    <td>& exist;</td>
+                    <td>Atualmente existe</td>
+                </tr>
+                <tr>
+                    <td>&empty;</td>
+                    <td>& #8709;</td>
+                    <td>& empty;</td>
+                    <td>Vazio</td>
+                </tr>
+                <tr>
+                    <td>&nabla;</td>
+                    <td>& #8711;</td>
+                    <td>& nabla;</td>
+                    <td>Nabla</td>
+                </tr>
+                <tr>
+                    <td>&isin;</td>
+                    <td>& #8712</td>
+                    <td>& isin;</td>
+                    <td>Pertence a</td>
+                </tr>
+                <tr>
+                    <td>&notin;</td>
+                    <td>& #8713;</td>
+                    <td>& notin;</td>
+                    <td>Não pertence a</td>
+                </tr>
+                <tr>
+                    <td>&ni;</td>
+                    <td>& #8715</td>
+                    <td>& ni;</td>
+                    <td>Contém</td>
+                </tr>
+                <tr>
+                    <td>&prod;</td>
+                    <td>& #8719</td>
+                    <td>& prod;</td>
+                    <td>Produto N-ário</td>
+                </tr>
+                <tr>
+                    <td>&sum;</td>
+                    <td>& sum;</td>
+                    <td>& #8721</td>
+                    <td>Soma N-ário</td>
+                </tr>
+            </table> <br><br><br>
+            O HTML também suporta algumas letras gregas: <br><br>
+            
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Número</th>
+                    <th>Entidade</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td>&alpha;</td>
+                    <td>& #913;</td>
+                    <td>& alpha;</td>
+                    <td>Alpha</td>
+                </tr>
+                <tr>
+                    <td>&beta;</td>
+                    <td>& #914;</td>
+                    <td>& beta;</td>
+                    <td>Beta</td>
+                </tr>
+                <tr>
+                    <td>&gamma;</td>
+                    <td>& #915;</td>
+                    <td>& gamma;</td>
+                    <td>Gamma</td>
+                </tr>
+                <tr>
+                    <td>&delta;</td>
+                    <td>& #916;</td>
+                    <td>& delta;</td>
+                    <td>Delta</td>
+                </tr>
+                <tr>
+                    <td>&epsilon;</td>
+                    <td>& #917;</td>
+                    <td>& epsilon;</td>
+                    <td>Epsilon</td>
+                </tr>
+                <tr>
+                    <td>&zeta;</td>
+                    <td>& #918;</td>
+                    <td>& zeta;</td>
+                    <td>Zeta</td>
+                </tr>
+            </table>
         </div>
 
         <br><br><br>
 
         <h1 id="emojis">HTML Emojis</h1>
         <div class="emojis">
-
+            <table>
+                <tr>
+                    <th>Emoji</th>
+                    <th>Código</th>
+                </tr>
+                <tr>
+                    <td>&#128507;</td>
+                    <td>& #128507;</td>
+                </tr>
+                <tr>
+                    <td>&#128508;</td>
+                    <td>& #128508;</td>
+                </tr>
+                <tr>
+                    <td>&#128509;</td>
+                    <td>& #128509;</td>
+                </tr>
+                <tr>
+                    <td>&#128510;</td>
+                    <td>& #128510;</td>
+                </tr>
+                <tr>
+                    <td>&#128511;</td>
+                    <td>& #128511;</td>
+                </tr>
+                <tr>
+                    <td>&#128512;</td>
+                    <td>& #128512;</td>
+                </tr>
+                <tr>
+                    <td>&#128513;</td>
+                    <td>& #128513;</td>
+                </tr>
+                <tr>
+                    <td>&#128514;</td>
+                    <td>& #128514;</td>
+                </tr>
+                <tr>
+                    <td>&#128515;</td>
+                    <td>& #128515;</td>
+                </tr>
+                <tr>
+                    <td>&#128516;</td>
+                    <td>& #128516;</td>
+                </tr>
+            </table>
+            <br><br><br>
+            Os emojis parecem imagens ou ícones, mas não são. São letras ( caracteres ) do conjunto de caracteres UTF-8 ( Unicode ). UTF-8 cobre quase todos os personagens e símbolos do mundo. <br><br>
+            Resumindo, dependendo do número que você colocar vai aparecer um emoji ou símbolo diferente.
         </div>
         <br><br><br>
 
         <h1 id="charsets">HTML Charsets</h1>
         <div class="charsets">
-
+            Para exibir uma página HTML corretamente, um navegador da Web deve saber qual conjunto de caracteres usar. <br><br>
+            O conjunto de caracteres é especificado na tag <code>&lt;meta&gt;</code>: <br><br>
+            <code>&lt;meta charset="UTF-8"&gt;</code>
         </div>
         <br><br><br>
 
         <h1 id="url">HTML Url Encode</h1>
         <div class="url">
-
+            Um URL é outra palavra para um endereço web. Um URL pode ser composto de palavras (por exemplo, www.youtube.com) ou um endereço de Protocolo de Internet (IP) (por exemplo. 192.68.20.50). A maioria das pessoas insere o nome ao navegar, porque os nomes são mais fáceis de lembrar do que os números.Os navegadores da Web solicitam páginas de servidores da Web usando um URL. Um Uniform Resource Locator (URL) é usado para endereçar um documento (ou outros dados) na web. <br><br>
+            Veja o link exemplo a seguir: <br><br>
+            <code>scheme://prefix.domain:port/path/filename</code><br><br>
+            Vou explicar o que cada parte faz: <br><br>
+            Scheme - define o tipo serviço de Internet (o mais comum é http ou https)
+            Prefix - define um domínio prefixo (o padrão para http é www)
+            Domain - define a Internet nome do domínio (como youtube.com)
+            Port - define o número da porta no host (o padrão para http é 80)
+            Path - define a caminho no servidor (Se omitido: o diretório raiz do site)
+            Filename - define o nome de um documento ou recurso
         </div>
         <br><br><br>
 
         <h1 id="xhtml">HTML vs XHTML</h1>
         <div class="xhtml">
-
+            XHTML é uma versão mais rigorosa e baseada em XML do HTML. Mas o que é um XHTML? <br><br>
+            1 - XHTML significa EXtensível HyperText Markup Langústia <br>
+            2 - XHTML é HTML definido como uma aplicação XML <br>
+            3 - XHTML é suportado por todos os principais navegadores <br><br>
+            Ta bom, mas pra que usar o XHTML? <br><br>
+            XML é uma linguagem de marcação onde todos os documentos devem ser marcados corretamente (ser "bem formado").
+            O XHTML foi desenvolvido para tornar o HTML mais extensível e flexível para trabalhar
+             outros formatos de dados (como XML). Além disso, os navegadores ignoram erros nas páginas HTML
+              , e tenta exibir o site, mesmo que tenha alguns erros na marcação. Portanto, o XHTML 
+              vem com um tratamento de erros muito mais rigoroso. <br><br>
+              No XHTML os elementos devem estar sempre fechados: <br><br>
+              Certo: <br><br>
+              <code>&lt;p&gt; Alguma coisa &lt;/p&gt;</code> <br><br>
+              Errado: <br><br>
+              <code>&lt;p&gt; Alguma coisa</code> <br><br>
+              Fora isso, os elementos vazios sempre devem ser fechados: <br><br>
+              Certo:
+              Quebra de linha: <code>&lt;br /&gt;</code><br><br>
+              Imagem: <code>&lt;img src="happy.gif" alt="Happy face" /&gt;</code> <br><br><br>
+              Errado: <br><br>
+              Quebra de linha: <code>&lt;br&gt;</code><br><br>
+              Imagem: <code>&lt;img src="happy.gif" alt="Happy face"&gt;</code> <br><br><br>
+              Existem muitas diferenças ainda, caso queira recomendo uma pesquisa mais aprofundada.
         </div>
 
         <br><br><br>
 
         <h1 id="forms">HTML Forms</h1>
         <div class="forms">
+            Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário é na maioria das vezes enviado para um servidor para processamento. <br><br>
+            <form action="index.html">
+                <label for="fname">Primeiro nome:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Último nome:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <input type="submit" value="Submit">
+            </form> <br><br>
+            <code>
+            &lt;form action="index.html" &gt; <br>
+            &lt; label for="fname" &gt; Primeiro nome: &lt; /label&gt; <br>
+            &lt; input type="text" id="fname" name="fname" value=""&gt; <br>
+            &lt; label for="fname" &gt; Ultimo nome: &lt; /label&gt; <br>
+            &lt; input type="text" id="lname" name="lname" value=""&gt; <br>
+            &lt; input type="submit" value="submit" &gt; <br>
+            &lt;/form &gt;
+            </code><br><br><br>
+            Como deu para ver começamos utilizando o elemento <code>&lt;form&gt;</code>, que cria o formulario. Ele serve para diferentes tipos de elementos de entrada, tais como: campos de texto, caixas de seleção, rádio botões, botões de envio, etc. <br><br>
+            O elemento <code>&lt;input&gt;</code> é o mais importante, ele servira para ter entrada de alguma informação.
 
         </div>
 
@@ -588,14 +966,98 @@
 
         <h1 id="formsattributes">HTML Forms Attributes</h1>
         <div class="formsattributes">
-
+            Este capítulo descreve os diferentes atributos para o elemento <code>&lt; form&gt;</code>. <br><br>
+            Vamos começar pelo atributo <code>&lt;action&gt;</code>: <br><br>
+            O action atributo define a ação a ser executada quando o formulário é enviado. Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão enviar. <br><br>
+            Vamos usar o código usado para apresentar o forms como exemplo: <br><br>
+            <code>
+                &lt;form <mark>action="index.html"</mark> &gt; <br>
+                &lt; label for="fname" &gt; Primeiro nome: &lt; /label&gt; <br>
+                &lt; input type="text" id="fname" name="fname" value=""&gt; <br>
+                &lt; label for="fname" &gt; Ultimo nome: &lt; /label&gt; <br>
+                &lt; input type="text" id="lname" name="lname" value=""&gt; <br>
+                &lt; input type="submit" value="submit" &gt; <br>
+                &lt;/form &gt;
+            </code> <br><br>
+            Nesse caso o <code>&lt;action&gt;</code> irá nos levar ao index.html. <br><br><br>
+            Já a tag <code>&lt;target&gt;</code> irá especificar onde será mostrada a resposta recebida do formulario.  <br><br>
+            <code>&lt;form action="index.html" <mark>target=_blank</mark>&gt; <br>
+                Seu código aqui.............. <br>
+                &lt;/form&gt;<br>
+            </code>
         </div>
 
         <br><br><br>
 
         <h1 id="formselements">HTML Forms Elements</h1>
         <div class="formselements">
-
+            O elemento <code>&lt;form&gt;</code> pode conter os um ou mais dos seguintes elementos: <br><br>
+            <code>&lt;input&gt;</code><br>
+            <code>&lt;label&gt;</code><br>
+            <code>&lt;select&gt;</code><br>
+            <code>&lt;textarea&gt;</code><br>
+            <code>&lt;button&gt;</code><br>
+            <code>&lt;fieldset&gt;</code><br>
+            <code>&lt;legend&gt;</code><br>
+            <code>&lt;datalist&gt;</code><br>
+            <code>&lt;output&gt;</code><br>
+            <code>&lt;option&gt;</code><br>
+            <code>&lt;optgroup&gt;</code><br><br><br>
+            Vamos começar pelo elemento <code>&lt;input&gt;</code>:<br>
+            Um dos elementos de forma mais utilizados é o &lt;input&gt;. O &lt;input&gt; pode ser exibido de várias maneiras, dependendo do type atributo. <br><br>
+            Exemplo: <br>
+            <code>&lt;label for="fname"&gt;Primeiro nome:&lt;/label&gt; <br>
+            &lt;input type="text" id="fname" name="fname"&gt;</code> <br><br>
+            
+            O <code>&lt;label&gt;</code> define um rótulo para vários formar elementos. Ele também ajuda os usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) porque quando o usuário clica no texto dentro do &lt;label&gt; elemento, ele alterna o botão de opção/caixa de seleção.<br> <br>
+            
+            O <code>&lt;select&gt;</code> define uma lista suspensa:<br><br>
+            Exemplo: <br><br>
+            <code>
+                &lt;label for="cars"&gt;Escolha um carro: &lt;/label&gt; <br>
+                &lt;select id="cars" nome="cars"&gt; <br>
+                &lt;option value="volvo"&gt;Volvo&lt;/option&gt; <br>
+                &lt;/select&gt;
+            </code> <br><br>
+            O &lt;option&gt; define uma opção que pode ser selecionado. <br><br><br>
+            O <code>&lt;textarea&gt;</code> elemento define um campo de entrada de várias linhas(uma área de texto).<br><br>
+            Veja um exemplo: <br><br>
+            <code>&lt;textarea name=message" rows="10" cols="30"&gt;O gato está brincando no jardim. <code>&lt;/textarea&gt;</code></code> <br><br>
+            Veja ele funcionando: <br><br>
+            <textarea name="message" rows="10" cols="30">
+            O gato está brincando no jardim.
+            </textarea><br><br>
+            O <code>rows</code> atributo especifica o número visível de linhas em uma área de texto. <br>
+            O <code>cols</code> atributo especifica a largura visível de um texto área. <br><br><br>
+            O <code>&lt;button&gt;</code> cria um botão clicavel:<br>
+                <button type="button" onclick="alert('Curioso')">Clica em mim </button> <br><br>
+            O <code>&lt;fieldset&gt;</code> é usado para agrupar dados relacionados em um formulário. Já o <code>&lt;legend&gt;</code> define uma legenda para o <code>&lt;fieldset&gt;</code>.<br><br>
+            O <code>&lt;datalist&gt;</code> especifica uma lista de opções predefinidas para um <code>&lt;input&gt;</code>. Os usuários verão uma lista suspensa das opções predefinidas à medida que inserem dados.<br> 
+            Por último falta o elemento <code>&lt;output&gt;</code>, que representa o resultado de um cálculo (como um realizado por um script).<br><br>
+            Veja essa aba: <br><br>
+            <form action="/index.html"
+                oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 +
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output>
+                <br><br>
+                <input type="submit">
+            </form><br><br>
+            Veja o código: <br><br>
+            <code>&lt;form action="/index.html&gt; <br>
+            oninput="x.value=parseInt(a.value)+parseInt(b.value)"><br>
+            0 <br>
+            &lt;input type="range" id="a" name="a" value="50"> <br>
+            100 +<br>
+            &lt;input type="number" id="b" name="b" value="50"> <br>
+            =<br>
+            &lt;output name="x" for="a b">&lt;/output> <br>
+            &lt;br&gt;&lt;br&gt;<br>
+            &lt;input type="submit"&gt;<br>
+            &lt;/form&gt;</code>
         </div>
 
         <br><br><br>

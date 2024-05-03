@@ -28,6 +28,23 @@ table {
     width: 100%;
 }
   
+button{
+    background-color: #3d7544;
+    color: antiquewhite;
+    text-decoration: none;
+    width: 150px;
+    height: 20px;
+    transition: 0.5s;
+    border-radius: 7px;
+}
+button:hover{
+    width: 200px;
+    height: 30px;
+    background-color: #63a36c;
+    border-radius: 15px;
+}
+
+
 td, th {
     border: 1px solid #085312;
     text-align: left;
