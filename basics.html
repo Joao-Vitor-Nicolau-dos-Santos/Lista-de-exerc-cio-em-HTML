@@ -1064,20 +1064,105 @@
 
         <h1 id="inputtypes">HTML Input Types</h1>
         <div class="inputtypes">
-
+            Veja os tipos diferentes de entrada que se pode usar no HTML: <br><br>
+            <code>&lt;input type="button"&gt; <br>
+            &lt;input type="checkbox"&gt; <br>
+            &lt;input type="color"&gt; <br>
+            &lt;input type="date"&gt; <br>
+            &lt;input type="datetime-local"&gt; <br>
+            &lt;input type="email"&gt; <br>
+            &lt;input type="file"&gt; <br>
+            &lt;input type="hidden"&gt; <br>
+            &lt;input type="image"&gt; <br>
+            &lt;input type="month"&gt; <br>
+            &lt;input type="number"&gt; <br>
+            &lt;input type="password"&gt; <br>
+            &lt;input type="radio"&gt; <br>
+            &lt;input type="range"&gt; <br>
+            &lt;input type="reset"&gt; <br>
+            &lt;input type="search"&gt; <br>
+            &lt;input type="submit"&gt; <br>
+            &lt;input type="tel"&gt; <br>
+            &lt;input type="text"&gt; <br>
+            &lt;input type="time"&gt; <br>
+            &lt;input type="url"&gt; <br>
+            &lt;input type="week"&gt; <br></code><br><br>
+            Vamos falar sobre entrada de senha: <br><br>
+            <code>&lt;input type="password"&gt;</code> esse é a tag, veja um exemplo: <br><br>
+            <form>
+                <form>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd">
+                  </form> <br><br>
+              Veja o código: <br><br>
+              &lt;form>
+              &lt;label for="username">Username:&lt;/label><br>
+              &lt;input type="text" id="username" name="username"><br>
+              &lt;label for="pwd">Password:&lt;/label><br>
+              &lt;input type="password" id="pwd" name="pwd">
+              &lt;/form> <br><br><br>
+              Redefinição do tipo de entrada: <br><br>
+              <code>&lt;input type="reset"&gt;</code>define a botão de reset, isso redefinirá todos os valores de formulário para seus valores padrão: <br><br>
+              <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </form>
+              <br><br><br>
+              Veja o código: <br><br><br>
+              <code>&lt;form action="/action_page.php"><br>
+                &lt;label for="fname">First name:&lt;/label><br>
+                &lt;input type="text" id="fname" name="fname" value="John"><br>
+                &lt;label for="lname">Last name:&lt;/label><br>
+                &lt;input type="text" id="lname" name="lname" value="Doe"><br>
+                &lt;input type="submit" value="Submit"><br>
+                &lt;input type="reset" value="Reset"><br>
+                &lt;/form></code><br><br><br>
+            Vamos falar de botão de entrada: <br><br>
+            &lt;input type="button"&gt; define um botão: <br><br>
+            <input type="button" onclick="alert('Hello World!')" value="Click Me!"><br><br>
+            Veja o código: <br><br>
+            &lt;input type="button" onclick="alert('Hello World!')" value="Click Me!">
         </div>
         
         <br><br><br>
         
         <h1 id="inputattributes">HTML Input Attributes</h1>
         <div class="inputattributes">
-
+            Este capítulo descreve os diferentes atributos para o HTML &lt;input> elemento.
+            <br><br>
+            O valor Atributo: <br>
+            A entrada value atributo especifica um valor inicial para um campo de entrada. <br><br><br>
+            O Atributo readonly: <br>
+            A entrada readonly atributo especifica que um campo de entrada é somente leitura.
+            <br><br>
+            Um campo de entrada somente leitura não pode ser modificado (no entanto, um usuário pode tabular para ele, destacá-lo e copiar o texto dele).
+            <br><br>
+            O valor de um campo de entrada somente leitura será enviado ao enviar o formulário!
         </div>
 
         <br><br><br>
 
         <h1 id="inputformattributes">Input Form Attributes</h1>
         <div class="inputformattributes">
+            Este capítulo descreve as diferentes form* atributos para o HTML &lt;input> elemento.
+            <br><br>
+            O formulário Atributo: <br>
+            A entrada form atributo especifica o formulário o <input> o elemento pertence a. <br>
+            <br>
+            O valor deste atributo deve ser igual ao atributo id do <form> elemento a que pertence. <br>
+            <br><br><br>
+            O atributo formação: <br><br>
+            A entrada formaction atributo especifica a URL de o arquivo que processará a entrada quando o formulário for enviado. <br>
+            <br><br>
+            Nota: Este atributo substitui o action atributo do &lt;form> elemento. <br>
+            <br><br>
+            O formaction atributo trabalha com o seguintes tipos de entrada: enviar e imagem. <br>
 
         </div>
 
@@ -1085,42 +1170,133 @@
 
         <h1 id="canvas">HTML Canvas</h1>
         <div class="canvas">
-
+            O HTML &lt;canvas&gt; elemento é usado para desenhar gráficos em uma página da web.
+            <br><br>
+            O gráfico à esquerda é criado com &lt;canvas&gt;. Mostra quatro elementos: um retângulo vermelho, um retângulo gradiente, um, um retângulo multicolorido e um texto multicolorido.
+            <br><br>
+            Veja um exemplo: <br><br>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas> <br><br>
+            Veja o código: <br><br>
+            <code>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">&lt;/canvas></code>
         </div>
 
         <br><br><br>
 
         <h1 id="svg">HTML SVG</h1>
         <div class="svg">
-
+            O que é SVG?<br><br>
+            SVG significa Scalable Vector Graphics<br>
+            SVG é usado para definir gráficos baseados em vetores para a Web<br>
+            SVG define gráficos em formato XML<br>
+            Cada elemento e atributo em arquivos SVG pode ser animado<br>
+            SVG integra-se com outros padrões, como CSS, DOM, XSL e JavaScript<br>
+            O Elemento &lt;svg&gt; <br>
+            O HTML &lt;svg&gt; element é um contêiner para gráficos SVG.<br>
+            SVG tem vários métodos para desenhar caminhos, retângulos, círculos, polígonos, texto e muito mais. Veja um exemplo: <br><br>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+              </svg> <br><br>
+              Veja o código: <br><br>
+              <code>
+                &lt;svg width="100" height="100"> <br>
+              &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /> <br>
+              &lt;/svg> <br>
+              </code>
+              
+              
         </div>
 
         <br><br><br>
 
         <h1 id="media">HTML Media</h1>
         <div class="media">
-
+            Multimídia na web é som, música, vídeos, filmes e animações.
+            <br><br>
+            O que é Multimídia?
+            Multimídia vem em muitos formatos diferentes. Pode ser quase tudo o que você puder ouvir ou ver, como imagens, música, etc, som, vídeos, discos, filmes, animações e muito mais.
+            <br><br>
+            As páginas da Web geralmente contêm elementos multimídia de diferentes tipos e formatos.
+            <br><br>
+            Suporte ao Navegador: <br>
+            Os primeiros navegadores da web tinham suporte apenas para texto, limitado a uma única fonte em uma única cor.
+            <br><br>
+            Mais tarde vieram navegadores com suporte para cores, fontes, imagens e multimídia!
+            <br><br>
+            Formatos Multimídia: <br>
+            Elementos multimídia (como áudio ou vídeo) são armazenados em arquivos de mídia.
+            <br><br>
+            A maneira mais comum de descobrir o tipo de arquivo é olhar para o arquivo extensão.
+            <br><br>
+            Os arquivos multimídia têm formatos e extensões diferentes como: .wav, .mp3, .mp4, .mpg, .wmv e .avi.
         </div>
 
         <br><br><br>
 
         <h1 id="video">HTML Video</h1>
         <div class="video">
-
+            O elemento &lt;video&gt; é usado para reproduzir um arquivo de áudio em uma página da web. <br><br>
+            <video autoplay loop muted height="600px">
+                <source src="Banguela Dançando.mp4" type="video/mp4">
+            </video><br><br><br>
+            Vamos ver o código: <br><br>
+            <code>
+                &lt;video autoplay loop height="600px"> <br>
+                &lt;source src="Banguela Dançando.mp4" type="video/mp4"> <br>
+                &lt;/video> <br>
+            </code>
         </div>
 
         <br><br><br>
 
         <h1 id="audio">HTML Audio</h1>
         <div class="audio">
-
+            O elemento &lt;audio&gt; é usado para reproduzir um arquivo de áudio em uma página da web. <br><br>
+            Veja: <br><br>
+            <audio controls autoplay muted>
+                <source src="Mikey Mouse.mp3" type="audio/mpeg"> <br><br><br>
+              </audio><br><br>
+              Bora para o código: <br><br>
+              <code>&lt;audio controls autoplay muted> <br>
+              &lt;source src="Mikey Mouse.mp3" type="audio/mpeg"> <br>
+              &lt;/audio> <br></code>
         </div>
 
         <br><br><br>
 
         <h1 id="drag">HTML Drag/Drop</h1>
         <div class="drag">
-
+            Em HTML, qualquer elemento pode ser arrastado e descartado. <br><br>
+            <script>
+                function allowDrop(ev) {
+                  ev.preventDefault();
+                }
+                
+                function drag(ev) {
+                  ev.dataTransfer.setData("text", ev.target.id);
+                }
+                
+                function drop(ev) {
+                  ev.preventDefault();
+                  var data = ev.dataTransfer.getData("text");
+                  ev.target.appendChild(document.getElementById(data));
+                }
+                </script>
+                </head>
+                <body>
+                
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                
+                <img id="drag1" src="85dc8cd068e7e59139d9620684e1312b.jpg" draggable="true" ondragstart="drag(event)" height="150px"> <br><br>
+                Tornar um Elemento Arrastável: <br>
+                Primeiro de tudo: Para tornar um elemento arrastável, defina o draggable atributo para true. <br><br>
+                O que arrastar - ondragstart e setData() <br><br>
+                Em seguida, especifique o que deve acontecer quando o elemento é arrastado. <br><br>
+                No exemplo acima, o ondragstart atributo chama uma função, drag(event), isso especifica quais dados serão arrastados. <br><br>
+                O dataTransfer.setData() o método define o tipo de dados e o valor do dados arrastados. <br><br>
+                Onde cair - ondragover: <br><br>
+                O ondragover evento especifica onde os dados arrastados podem ser descartados. <br><br>
+                Por padrão, dados/elementos não podem ser descartados em outros elementos. Para permitir uma queda, devemos evitar o manuseio padrão do elemento.<br><br>
+                Isso é feito chamando o event.preventDefault() método para o evento ondragover.<br><br>
         </div>
 </body>
 </html>
